@@ -68,7 +68,6 @@ namespace OOP_Exam.Class
                 Console.WriteLine();
             }
 
-            Console.WriteLine($"Your Grade is {score} from {Questions.Sum(q => q.Mark)}");
             Console.WriteLine($"Time = {totalTime}");
             Console.WriteLine("Thank you");
         }
