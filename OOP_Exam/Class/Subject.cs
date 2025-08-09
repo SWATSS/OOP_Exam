@@ -76,18 +76,10 @@ namespace OOP_Exam.Class
                 else
                 {
                     q = new MCQ(body, mark);
-                    int cNum;
-                    while (true)
-                    {
-                        Console.WriteLine("Enter number of choices: ");
-                        if (int.TryParse(Console.ReadLine(), out cNum) && (cNum > 1))
-                            break;
-                        Console.WriteLine("Invalid choice. Must be two or more");
-                    }
 
-                    for (int c = 1; c <= cNum; c++)
+                    for (int c = 1; c <= 4; c++)
                     {
-                        Console.Write($"Choice {c}: ");
+                        Console.Write($"Please Enter Choice Number {c}: ");
                         string cText = Console.ReadLine();
                         q.AnswerList.Add(new Answer(c, cText));
                     }
@@ -98,7 +90,8 @@ namespace OOP_Exam.Class
                 while (true)
                 {
                     Console.Write("Enter Correct Answer Id: ");
-                    if (int.TryParse(Console.ReadLine(), out RightAnswer) && (RightAnswer <= q.AnswerList.Count && RightAnswer > 0))
+                    if(qType == 1)  Console.Write("(1 for True | 2 for False): ");
+                    if (int.TryParse(Console.ReadLine(), out RightAnswer) && (RightAnswer <= 4 && RightAnswer > 0))
                         break;
                     else Console.WriteLine("invalid Option");
                 }
