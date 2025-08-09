@@ -26,8 +26,8 @@ namespace OOP_Exam.Class
             for (int i = 0; i < Questions.Count; i++)
             {
                 var q = Questions[i];
-                Console.WriteLine($"\n{q.Header}\nQuestion {i + 1} : {q.Body}");
-
+                Console.WriteLine($"\n{q.Header}     Mark: {q.Mark}");
+                Console.WriteLine();
                 foreach (var ans in q.AnswerList)
                 {
                     Console.WriteLine($"{ans.AnswerId}. {ans.AnswerText}");
