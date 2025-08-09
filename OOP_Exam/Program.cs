@@ -8,7 +8,6 @@ namespace OOP_Exam
         {
             Subject subj = new Subject(1, "OOP");
             subj.CreateExam();
-
         }
     }
 }

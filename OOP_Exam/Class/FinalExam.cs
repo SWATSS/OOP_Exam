@@ -18,7 +18,6 @@ namespace OOP_Exam.Class
             int score = 0;
             var startTime = DateTime.Now;
 
-            // قائمة لتخزين النتائج بعد الامتحان
             var results = new List<(string Body, string UserAnswer, string CorrectAnswer, int Mark, bool IsCorrect)>();
 
             for (int i = 0; i < Questions.Count; i++)
