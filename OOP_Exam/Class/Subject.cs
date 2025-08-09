@@ -90,7 +90,7 @@ namespace OOP_Exam.Class
                 while (true)
                 {
                     Console.Write("Enter Correct Answer Id: ");
-                    if(qType == 1)  Console.Write("(1 for True | 2 for False): ");
+                    if (qType == 1) Console.Write("(1 for True | 2 for False): ");
                     if (int.TryParse(Console.ReadLine(), out RightAnswer) && (RightAnswer <= 4 && RightAnswer > 0))
                         break;
                     else Console.WriteLine("invalid Option");
@@ -103,7 +103,6 @@ namespace OOP_Exam.Class
 
             Console.Write("Do you want to start the exam now? (Y/N): ");
             string startChoice = Console.ReadLine().Trim().ToUpper();
-
             if (startChoice == "Y")
             {
                 Console.Clear();
